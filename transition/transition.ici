@@ -19,3 +19,12 @@ update.transition.options = ["ignore_errors", "restart_after_update", "retrieve_
 if equals(sys.osname, "windows") {
     update.transition.options += "delayed_deletion"
 }
+
+if gte(UPDATER_VERSION, 5) {
+    plugins.disable *= "krosmagainterface"
+    plugins.disable *= "krosmasterinterface"
+    plugins.disable *= "dofusinterface"
+    plugins.disable *= "wafuinterface"
+    plugins.disable *= "updatemonitoring"
+    plugins.disable *= "ga"
+}

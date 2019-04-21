@@ -1,0 +1,6 @@
+name = "installer"
+depends = ["core"]
+soft_depends = ["network_proxy", "optionsdialog", "eula"]
+mandatory = true
+autoload  = false
+required_by = ["update"]

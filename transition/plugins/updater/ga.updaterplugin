@@ -1,0 +1,2 @@
+name = "ga"
+depends = ["core", "network_proxy"]

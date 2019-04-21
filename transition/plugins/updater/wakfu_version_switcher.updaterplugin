@@ -1,0 +1,20 @@
+name = "wakfu_version_switcher"
+depends = ["core", "optionsdialog", "update"]
+autoload = false
+
+uc_prod = "http://dl.ak.ankama.com/updates/uc1"
+uc_asia = "http://dl.ak.ankama.com/updates/asia"
+uc_internal = "http://agrum-server.ankama.lan/updates/transition/uc1/"
+uc_pre_release = "http://agrum-server.ankama.lan/updates/transition/uc2/"
+uc_sp = "http://dl1.speedybird.com/updates/uc"
+
+data = {servers: [
+{name: "Gostus   (Trunk)",             id:"wakfu-trunk" , uc:uc_internal   ,gameserver:"gostus.ankama.lan:5556;5557"},
+{name: "Percimol (Trunck Freeze)",     id:"wakfu-stable" , uc:uc_internal  ,gameserver:"percimol.ankama.lan:5556;5557"},
+{name: "Boufton  (Release Candidate)", id:"wakfu",        uc:uc_pre_release,gameserver:"boufton.ankama.lan:5556;5557"},
+{name: "Staging",                      id:"wakfu",        uc:uc_pre_release,gameserver:"wakfu-staging.ankama.lan:5556;5557"},
+{name: "Beta",                         id:"wakfu-beta"  , uc:uc_prod },
+{name: "Prod",                         id:"wakfu"  ,      uc:uc_prod },
+{name: "SpeedyBird",                   id:"wakfu-speedybird", uc:uc_sp },
+{name: "Asia",                         id:"wakfu", uc:uc_asia },
+]}

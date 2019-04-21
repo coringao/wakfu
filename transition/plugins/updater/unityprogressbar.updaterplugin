@@ -1,0 +1,3 @@
+name = "unityprogressbar"
+depends = ["core"]
+needGUI = true

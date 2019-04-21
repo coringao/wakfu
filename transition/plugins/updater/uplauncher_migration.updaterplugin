@@ -1,0 +1,4 @@
+name = "uplauncher_migration"
+depends = ["core", "mainwindow"]
+autoload = false
+required_by = ["update"]

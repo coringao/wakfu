@@ -1,0 +1,15 @@
+[General]
+project_id=transition-linux64
+os=Linux
+installed=true
+uninstalled=false
+firstUpdateCompleted=true
+needUpdate=false
+
+[components]
+base=installed
+fonts=installed
+wakfu_plugins=installed
+
+[extra_settings]
+uc_url=http://dl.ak.ankama.com/updates/uc1

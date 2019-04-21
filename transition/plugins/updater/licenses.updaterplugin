@@ -1,0 +1,76 @@
+name = "licenses"
+depends = ["core"]
+autoload = true
+required_by = ["optionsdialog"]
+
+data = {
+
+licenses : [
+
+{
+   name : "Qt",
+   type : "LGPL",
+   version : "4.8",
+   file : ":/licenses/lgpl.txt",
+   icon : ":/licenses/qt.png",
+   website : "http://qt-project.org/",
+   downloadUrl : "http://download.qt-project.org/archive/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.tar.gz"
+},
+{
+   name : "qdrive",
+   type : "LGPL",
+   file : ":/licenses/lgpl.txt",
+   website : "https://gitorious.org/qdrive",
+},
+{
+   name : "open-vcdiff",
+   type : "Apache",
+   file : ":/licenses/open-vcdiff.txt",
+   icon : ":/licenses/google.png",
+   website : "https://code.google.com/p/open-vcdiff/",
+},
+{
+   name : "QJson",
+   type : "LGPL",
+   file : ":/licenses/lgpl.txt",
+   website : "http://qjson.sourceforge.net/",
+},
+{
+   name : "Snappy",
+   type : "BSD",
+   file : ":/licenses/snappy.txt",
+   icon : ":/licenses/google.png",
+   website : "https://code.google.com/p/snappy/",
+},
+{
+   name : "Qt Single Application",
+   type : "BSD",
+   file : ":/licenses/QtSingleApp_licence.txt",
+   icon : ":/licenses/qt.png",
+},
+{
+   name : "OpenSSL",
+   type : "BSD",
+   file : ":/licenses/openssl.txt",
+   website : "https://www.openssl.org/",
+},
+{
+   name : "VLC",
+   type : "LGPL",
+   version : "2.14",
+   file : ":/licenses/lgpl.txt",
+   icon : ":/licenses/vlc.png",
+   website : "http://www.videolan.org/vlc/",
+   downloadUrl :"http://download.videolan.org/pub/videolan/vlc/2.1.4/vlc-2.1.4.tar.xz"
+},
+{
+   name : "Growl",
+   type : "BSD",
+   file : ":/licenses/growl.txt",
+   website : "http://growl.info/",
+}
+
+
+] #licenses
+
+} #data
