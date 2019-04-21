@@ -1,0 +1,20 @@
+#!/bin/bash
+
+file_path=`readlink -f -n "$0"`
+path=`dirname "$file_path"`
+
+if [[ $EUID -eq 0 ]]; then
+	echo "Please run $0 as a normal user, and not with the root account"
+	exit 1
+fi
+
+#The following 2 lines can be uncommented if transitions crashes at startup
+unset SESSION_MANAGER
+#export QT_NO_GLIB=1
+
+#invoking update program
+LD_LIBRARY_PATH="$path/transition/" "$path/transition/ankama-transition-wakfu"
+if [ $? -ne 0 ] ; then
+	echo "Wakfu launcher failed to start or encountered an error"
+    exit $?
+fi

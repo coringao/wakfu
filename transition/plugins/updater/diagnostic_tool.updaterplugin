@@ -1,0 +1,3 @@
+name = "diagnostic_tool"
+depends = ["core", "network_proxy"]
+needGUI = true

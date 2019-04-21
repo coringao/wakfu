@@ -1,0 +1,3 @@
+name = "eula"
+depends = ["core"]
+autoload = true

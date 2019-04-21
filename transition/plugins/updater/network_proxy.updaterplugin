@@ -1,0 +1,2 @@
+name = "network_proxy"
+depends = ["core"]

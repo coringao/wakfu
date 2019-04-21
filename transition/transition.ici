@@ -1,0 +1,21 @@
+update.transition.dir = "${PWD}"
+
+if equals(sys.osname, "linux"){
+    if equals(sys.updater_arch, "amd64")
+        update.transition.id  = "transition-linux64"
+    else
+        update.transition.id  = "transition-linux32"
+}
+
+else if equals(sys.osname, "windows")
+    update.transition.id  = "transition-win32"
+
+else if equals(sys.osname, "mac")
+    update.transition.id  = "transition-mac"
+
+update.transition.url = "http://dl.ak.ankama.com/updates/uc1"
+
+update.transition.options = ["ignore_errors", "restart_after_update", "retrieve_first", "prevent_closing"]
+if equals(sys.osname, "windows") {
+    update.transition.options += "delayed_deletion"
+}

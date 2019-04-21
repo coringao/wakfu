@@ -1,0 +1,4 @@
+name = "about"
+depends = ["core", "optionsdialog"]
+soft_depends = ["eula", "licenses"]
+autoload = true

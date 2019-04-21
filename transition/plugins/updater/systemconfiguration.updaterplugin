@@ -1,0 +1,4 @@
+name = "systemconfiguration"
+depends = ["core"]
+autoload = true
+unsafe = true

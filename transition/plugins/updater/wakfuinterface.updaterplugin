@@ -1,0 +1,6 @@
+name = "wakfuinterface"
+depends = ["core", "network_proxy"]
+mandatory = "true"
+replace = ["mainwindow"]
+needGUI = true
+required_by = ["systray"]

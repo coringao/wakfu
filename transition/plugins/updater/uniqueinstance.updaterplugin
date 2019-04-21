@@ -1,0 +1,3 @@
+name = "uniqueinstance"
+depends = ["core"]
+needGUI = true

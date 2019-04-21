@@ -1,0 +1,4 @@
+name = "dbusservice"
+depends = ["core"]
+required_by = ["update"]
+autoload = false

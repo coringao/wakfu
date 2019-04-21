@@ -1,0 +1,3 @@
+name = "systray"
+depends = ["core"]
+needGUI = true
