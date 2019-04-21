@@ -1,7 +1,7 @@
 Wakfu for GNU/Linux
 ===================
 
-[WAKFU](logo.png)
+![logo](logo.png)
 
 Wakfu is a turn-based tactical MMORPG developed by Ankama Games
 in the GNU/Linux version.
